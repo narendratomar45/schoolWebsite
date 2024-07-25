@@ -1,10 +1,12 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const Faculty = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   const facultyList = [
     {
       name: "John Doe",
@@ -45,20 +47,32 @@ const Faculty = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-gray-50">
       <h1
-        className="text-2xl md:text-3xl font-bold mb-4 text-center"
+        className="text-2xl md:text-3xl font-bold mb-6 text-center text-indigo-700"
         data-aos="fade-up"
       >
         Faculty
       </h1>
-      <ul className="space-y-4" data-aos="flip-left">
+      <ul className="space-y-4">
         {facultyList.map((faculty, index) => (
-          <li key={index} className="border p-4 rounded-lg shadow-sm">
-            <h2 className="text-xl font-bold">{faculty.name}</h2>
-            <p className="text-sm md:text-base">{faculty.position}</p>
-            <p className="text-sm md:text-base">{faculty.qualification}</p>
-            <p className="text-sm md:text-base">{faculty.experience}</p>
+          <li
+            key={index}
+            className="bg-white border border-gray-300 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+            data-aos="flip-left"
+          >
+            <h2 className="text-xl font-bold text-indigo-600">
+              {faculty.name}
+            </h2>
+            <p className="text-sm md:text-base text-gray-800">
+              {faculty.position}
+            </p>
+            <p className="text-sm md:text-base text-gray-600">
+              {faculty.qualification}
+            </p>
+            <p className="text-sm md:text-base text-gray-500">
+              {faculty.experience}
+            </p>
           </li>
         ))}
       </ul>

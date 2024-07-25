@@ -7,9 +7,10 @@ const Academics = () => {
       duration: 1000,
     });
   }, []);
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <header>
+    <div className="container mx-auto px-4 py-8 bg-gray-100">
+      <header className="bg-blue-500 text-white p-4 rounded-lg shadow-md">
         <h1
           className="text-2xl md:text-3xl font-bold mb-4 text-center"
           data-aos="fade-up"
@@ -18,15 +19,18 @@ const Academics = () => {
         </h1>
       </header>
 
-      <section aria-labelledby="curriculum-overview">
+      <section
+        className="bg-white p-6 mt-6 rounded-lg shadow-lg"
+        aria-labelledby="curriculum-overview"
+      >
         <h2
           id="curriculum-overview"
-          className="text-xl md:text-2xl font-bold mt-4"
+          className="text-xl md:text-2xl font-bold mt-4 text-blue-600"
           data-aos="fade-up"
         >
           Curriculum Overview
         </h2>
-        <p data-aos="flip-left">
+        <p data-aos="flip-left" className="text-gray-700">
           At Springdale Public School, we offer a comprehensive and balanced
           curriculum designed to cater to the diverse needs of students across
           different educational stages. Our curriculum is structured into three
@@ -34,10 +38,13 @@ const Academics = () => {
         </p>
       </section>
 
-      <section aria-labelledby="primary-curriculum">
+      <section
+        className="bg-gray-50 p-6 mt-6 rounded-lg shadow-lg"
+        aria-labelledby="primary-curriculum"
+      >
         <h3
           id="primary-curriculum"
-          className="text-lg md:text-xl font-bold mt-4"
+          className="text-lg md:text-xl font-bold mt-4 text-green-600"
           data-aos="fade-up"
         >
           Primary (Grades 1-5)
@@ -45,7 +52,10 @@ const Academics = () => {
         <p className="mb-4" data-aos="fade-up">
           <strong>Core Subjects:</strong>
         </p>
-        <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+        <ul
+          className="list-disc list-inside mb-4 text-gray-800"
+          data-aos="flip-left"
+        >
           <li>
             <strong>English Language Arts:</strong> Emphasis on reading,
             writing, speaking, and listening skills.
@@ -77,10 +87,13 @@ const Academics = () => {
         </ul>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-blue-500" data-aos="fade-up">
             Teaching Methodologies:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Hands-On Learning:</strong> Interactive activities and
               experiments to reinforce concepts.
@@ -97,10 +110,13 @@ const Academics = () => {
         </div>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-blue-500" data-aos="fade-up">
             Educational Resources:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Textbooks and Workbooks:</strong> Age-appropriate
               materials for core subjects.
@@ -110,17 +126,20 @@ const Academics = () => {
               learning engaging.
             </li>
             <li>
-              <strong>Educational Games:</strong> Charts, models, and multimedia
+              <strong>Charts and Models:</strong> Charts, models, and multimedia
               resources to support instruction.
             </li>
           </ul>
         </div>
       </section>
 
-      <section aria-labelledby="secondary-curriculum">
+      <section
+        className="bg-white p-6 mt-6 rounded-lg shadow-lg"
+        aria-labelledby="secondary-curriculum"
+      >
         <h3
           id="secondary-curriculum"
-          className="text-lg md:text-xl font-bold mt-4"
+          className="text-lg md:text-xl font-bold mt-4 text-purple-600"
           data-aos="fade-up"
         >
           Secondary (Grades 6-10)
@@ -128,7 +147,10 @@ const Academics = () => {
         <p className="mb-4" data-aos="fade-up">
           <strong>Core Subjects:</strong>
         </p>
-        <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+        <ul
+          className="list-disc list-inside mb-4 text-gray-800"
+          data-aos="flip-left"
+        >
           <li>
             <strong>English Language Arts:</strong> Advanced reading
             comprehension, writing techniques, and literary analysis.
@@ -156,10 +178,13 @@ const Academics = () => {
         </ul>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-purple-500" data-aos="fade-up">
             Elective Subjects:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Art and Design:</strong> Advanced exploration of visual
               arts and design principles.
@@ -176,10 +201,13 @@ const Academics = () => {
         </div>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-purple-500" data-aos="fade-up">
             Teaching Methodologies:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Inquiry-Based Learning:</strong> Interactive activities
               and experiments to reinforce concepts.
@@ -196,10 +224,13 @@ const Academics = () => {
         </div>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-purple-500" data-aos="fade-up">
             Educational Resources:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Interactive Textbooks:</strong> Enhanced textbooks with
               multimedia and online resources.
@@ -216,10 +247,13 @@ const Academics = () => {
         </div>
       </section>
 
-      <section aria-labelledby="senior-secondary-curriculum">
+      <section
+        className="bg-gray-50 p-6 mt-6 rounded-lg shadow-lg"
+        aria-labelledby="senior-secondary-curriculum"
+      >
         <h3
           id="senior-secondary-curriculum"
-          className="text-lg md:text-xl font-bold mt-4"
+          className="text-lg md:text-xl font-bold mt-4 text-red-600"
           data-aos="fade-up"
         >
           Senior Secondary (Grades 11-12)
@@ -227,7 +261,10 @@ const Academics = () => {
         <p className="mb-4" data-aos="fade-up">
           <strong>Core Subjects:</strong>
         </p>
-        <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+        <ul
+          className="list-disc list-inside mb-4 text-gray-800"
+          data-aos="flip-left"
+        >
           <li>
             <strong>English Language Arts:</strong> Advanced language skills and
             preparation for higher education.
@@ -247,10 +284,13 @@ const Academics = () => {
         </ul>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-red-500" data-aos="fade-up">
             Elective Subjects:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Business Studies:</strong> Introduction to Business
               Management, Accounting, and Economics.
@@ -267,10 +307,13 @@ const Academics = () => {
         </div>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-red-500" data-aos="fade-up">
             Teaching Methodologies:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong> Research-Based Learning:</strong> Emphasis on independent
               research and critical analysis.
@@ -287,16 +330,19 @@ const Academics = () => {
         </div>
 
         <div>
-          <h4 className="font-bold" data-aos="fade-up">
+          <h4 className="font-bold text-red-500" data-aos="fade-up">
             Educational Resources:
           </h4>
-          <ul className="list-disc list-inside mb-4" data-aos="flip-left">
+          <ul
+            className="list-disc list-inside mb-4 text-gray-800"
+            data-aos="flip-left"
+          >
             <li>
               <strong>Advanced Textbooks:</strong> Comprehensive materials
               aligned with higher education standards.
             </li>
             <li>
-              <strong>Research Databases: </strong>Access to academic journals,
+              <strong>Research Databases:</strong> Access to academic journals,
               research papers, and online resources.
             </li>
             <li>

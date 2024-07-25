@@ -36,37 +36,54 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
-      <section className="mb-8 flex flex-col items-center">
-        <h2 className="text-xl text-center md:text-2xl font-bold mb-4">
-          Virtual tour of Springdale Public School.
+    <div className="container mx-auto py-8 bg-gray-100">
+      <section className="mb-8">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-800 text-center mb-4">
+          Virtual tour of Springdale Public School
         </h2>
-        <div className="w-full h-96">
-          <video controls autoPlay muted className="w-full h-96">
+        <div className="w-full h-96 mb-8 bg-white p-4 rounded-lg shadow-md">
+          <video
+            controls
+            autoPlay
+            muted
+            className="w-full h-full rounded-lg shadow-md"
+          >
             <source src={schoolTour} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <h2 className="text-xl text-center md:text-2xl font-bold mb-4 mt-8">
-          Highlights from the Annual Function 2023.
+        <h2 className="text-xl md:text-2xl font-bold text-green-800 text-center mb-4">
+          Highlights from the Annual Function 2023
         </h2>
-        <div className="w-full h-96">
-          <video controls autoPlay muted className="w-full h-96">
+        <div className="w-full h-96 bg-white p-4 rounded-lg shadow-md">
+          <video
+            controls
+            autoPlay
+            muted
+            className="w-full h-full rounded-lg shadow-md"
+          >
             <source src={annualFunction} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </section>
-      <h1 className="text-3xl font-bold mb-4 text-center">Gallery</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-indigo-700">
+        Gallery
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {photos.map((photo, index) => (
-          <div key={index} className="border rounded overflow-hidden">
+          <div
+            key={index}
+            className="border rounded-lg overflow-hidden bg-white shadow-md"
+          >
             <img
               src={photo.src}
               alt={photo.alt}
               className="w-full h-48 object-cover"
             />
-            <p className="p-2 text-center">{photo.description}</p>
+            <p className="p-2 text-center text-gray-800 bg-gray-200">
+              {photo.description}
+            </p>
           </div>
         ))}
       </div>

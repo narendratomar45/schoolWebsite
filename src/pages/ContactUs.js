@@ -1,5 +1,6 @@
 import Aos from "aos";
 import React, { useEffect, useState } from "react";
+import "aos/dist/aos.css";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -7,6 +8,7 @@ const ContactUs = () => {
       duration: 1000,
     });
   }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,41 +27,49 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-gray-50">
       <h1
-        className="text-2xl md:text-3xl font-bold mb-4 text-center"
+        className="text-2xl md:text-3xl font-bold mb-6 text-center text-blue-700"
         data-aos="fade-up"
       >
         Contact Us
       </h1>
-      <div className="mb-8">
-        <p className="mb-2" data-aos="fade-up">
+      <div className="mb-8 bg-white p-6 rounded-lg shadow-lg">
+        <p className="mb-2 text-blue-600" data-aos="fade-up">
           <strong>Address:</strong>
         </p>
-        <p data-aos="flip-left">Springdale Public School,</p>
-        <p data-aos="flip-left">
+        <p className="text-gray-700" data-aos="flip-left">
+          Springdale Public School,
+        </p>
+        <p className="text-gray-700" data-aos="flip-left">
           Sector 62, Noida, Uttar Pradesh, India, 201301
         </p>
-        <p className="mb-2 mt-4" data-aos="fade-up">
+        <p className="mb-2 mt-4 text-green-600" data-aos="fade-up">
           <strong>Contact Numbers:</strong>
         </p>
-        <p data-aos="flip-left">Main Office: +91 123 456 7890</p>
-        <p data-aos="flip-left">Admissions: +91 123 456 7891</p>
-        <p className="mb-2 mt-4" data-aos="fade-up">
+        <p className="text-gray-700" data-aos="flip-left">
+          Main Office: +91 123 456 7890
+        </p>
+        <p className="text-gray-700" data-aos="flip-left">
+          Admissions: +91 123 456 7891
+        </p>
+        <p className="mb-2 mt-4 text-red-600" data-aos="fade-up">
           <strong>Email:</strong>
         </p>
-        <p data-aos="flip-left">
+        <p className="text-gray-700" data-aos="flip-left">
           General Inquiries: info@springdalepublicschool.edu.in
         </p>
-        <p data-aos="flip-left">
+        <p className="text-gray-700" data-aos="flip-left">
           Admissions: admissions@springdalepublicschool.edu.in
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-md mb-8"
+        className="bg-white p-6 rounded-lg shadow-lg mb-8 border-t-4 border-blue-600"
       >
-        <h2 className="text-xl md:text-2xl font-bold mb-4">Contact Form</h2>
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-purple-700">
+          Contact Form
+        </h2>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700">
             Name
@@ -70,7 +80,7 @@ const ContactUs = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
             required
           />
         </div>
@@ -84,7 +94,7 @@ const ContactUs = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
             required
           />
         </div>
@@ -97,14 +107,14 @@ const ContactUs = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
             rows="4"
             required
           />
         </div>
         <button
           type="submit"
-          className="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700"
+          className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition"
         >
           Submit
         </button>
@@ -116,7 +126,7 @@ const ContactUs = () => {
           height="450"
           allowFullScreen=""
           loading="lazy"
-          className="border-0"
+          className="border-0 rounded-lg shadow-lg"
         ></iframe>
       </div>
     </div>
